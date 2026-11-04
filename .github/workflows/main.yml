@@ -22,7 +22,10 @@ jobs:
 
       - uses: android-actions/setup-android@v3
         with:
-          packages: 'platform-tools,platforms;android-35,build-tools;35.0.0'
+          packages: |
+            platform-tools
+            platforms;android-35
+            build-tools;35.0.0
 
       - name: Compilar APK
         run: gradle assembleDebug
@@ -31,3 +34,4 @@ jobs:
         with:
           name: JOHAN-FC-27-APK
           path: app/build/outputs/apk/debug/app-debug.apk
+
