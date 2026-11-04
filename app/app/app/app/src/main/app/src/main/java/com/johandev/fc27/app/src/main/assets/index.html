@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JOHAN FC 27</title>
+<style>
+body {
+  margin: 0;
+  background: #101426;
+  color: white;
+  font-family: Arial;
+  text-align: center;
+}
+h1 { color: #35e88b; }
+button {
+  background: #35e88b;
+  border: 0;
+  padding: 15px 25px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+</style>
+</head>
+<body>
+<h1>JOHAN FC 27</h1>
+<h2>⚽ Modo partido</h2>
+<p>Paraguay 🇵🇾 vs Argentina 🇦🇷</p>
+<button onclick="jugar()">JUGAR</button>
+<h2 id="resultado">0 - 0</h2>
+<script>
+function jugar() {
+ document.getElementById("resultado").innerText =
+ Math.floor(Math.random()*4) + " - " +
+ Math.floor(Math.random()*4);
+}
+</script>
+</body>
+</html>
