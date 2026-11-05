@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JOHAN FC 27</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: white;
+  font-family: Arial, sans-serif;
+  background:
+    linear-gradient(90deg, #07121bee, #07121b88),
+    linear-gradient(0deg, #06120b, #102c3b);
+}
+header {
+  padding: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ffffff22;
+}
+.logo {
+  font-size: 25px;
+  font-weight: 900;
+  color: #65ff9a;
+}
+.edition { color: #aaa; font-size: 12px; }
+main { padding: 25px 18px; }
+.tag { color: #65ff9a; letter-spacing: 4px; }
+h1 { font-size: 38px; margin: 12px 0; }
+.subtitle { color: #bbb; }
+.feature {
+  margin-top: 30px;
+  padding: 25px;
+  min-height: 180px;
+  border-radius: 15px;
+  background: linear-gradient(120deg,#176b49,#102b3b);
+  border: 1px solid #ffffff33;
+}
+.feature h2 { font-size: 27px; }
+button {
+  border: 0;
+  padding: 14px 20px;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+.play { background: #65ff9a; color: #07150d; }
+.modes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 20px;
+}
+.mode {
+  background: #182633;
+  border: 1px solid #ffffff22;
+  border-radius: 12px;
+  padding: 20px 12px;
+  min-height: 105px;
+  color: white;
+  text-align: left;
+}
+.mode b { display: block; margin-top: 12px; }
+.mode:active { background: #28523e; }
+footer {
+  text-align: center;
+  color: #77858c;
+  padding: 25px;
+  font-size: 12px;
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">JOHAN FC 27</div>
+  <div class="edition">MOBILE EDITION</div>
+</header>
+
+<main>
+  <div class="tag">TEMPORADA 2027</div>
+  <h1>EL FÚTBOL<br>ES TUYO.</h1>
+  <p class="subtitle">Bienvenido a JOHAN FC 27</p>
+
+  <section class="feature">
+    <div>⚽ MODO PRINCIPAL</div>
+    <h2>EL PARTIDO</h2>
+    <p>Entrá al campo y jugá.</p>
+    <button class="play" onclick="abrir('Modo partido')">
+      JUGAR AHORA
+    </button>
+  </section>
+
+  <h3>MODOS DE JUEGO</h3>
+  <section class="modes">
+    <button class="mode" onclick="abrir('Modo carrera')">
+      🏆 <b>Modo carrera</b>
+    </button>
+    <button class="mode" onclick="abrir('Clubes')">
+      🛡️ <b>Clubes</b>
+    </button>
+    <button class="mode" onclick="abrir('Torneos')">
+      🌍 <b>Torneos</b>
+    </button>
+    <button class="mode" onclick="abrir('Configuración')">
+      ⚙️ <b>Configuración</b>
+    </button>
+  </section>
+</main>
+
+<footer>JOHAN FC 27 · PROYECTO FAN MADE</footer>
+
+<script>
+function abrir(modo) {
+  alert(modo + " próximamente en JOHAN FC 27");
+}
+</script>
+</body>
+</html>
